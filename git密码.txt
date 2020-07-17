@@ -4,3 +4,38 @@
 2、git：
 	email：2317723204@qq.com
 	password:19980116abc
+3、git使用
+安装：use git from git bash only..,q其他默认下一步
+path：gitbin目录
+
+配置git
+右键git bash
+配置本地用户名邮箱
+.gitconfig文件查看账户密码
+[user]
+	name = lwf
+	email = 2317723204@qq.com
+
+github与本地交互
+github.com：lwf12332112
+配置免密钥登录：$ ssh-keygen -t rsa -c 2317723204@qq.com一直回车
+发送给远程：github-setting-SSH and...-New SSH-title任意、key中任意输入刚才本地生成的ssh（id_rsa.pub文件）
+测试连通性：$ssh -t git@github.com后发现known_hosts文件
+
+本地创建文件夹mygit--》右键git bash执行命令git init生成隐藏文件.git
+github创建文件夹mygitremote--》生成ssh标识
+本地项目与远程项目关联：git remote add origin https://github.com/lwf12332112/mygitremote.git（这是https，可以用ssh标识）
+
+命令
+第一次发布项目（本地-远程）
+git add .
+git commit -m "注释"
+git push -u origin master
+
+第一次下载项目（远程-本地）
+git clone git@github.com:lwf12332112/mygitremote.git
+
+提交（本地-远程）
+git add .
+git commit -m "注释提交内容"
+git push origin master
