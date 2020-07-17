@@ -1,5 +1,6 @@
 1、github：
 	账号：lwf12332112
+	password:19980116ab
 2、git：
 	email：2317723204@qq.com
 	password:19980116abc
